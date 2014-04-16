@@ -1,0 +1,47 @@
+<!--  This file was powered by FROJAS -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="./css/SB-style-mobile.css"/>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="./js/jquery-1.7.2.js"></script> 
+		<script type="text/javascript" src="./js/RC_FACIL.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/SportzbreakPuzzle.css" />
+		<link rel="stylesheet" href="./css/puzzle.css" />
+
+		<title>SPORTZBREAK</title>
+
+	</head>
+	<body background="./images/degraded_line_bg.png">
+		<div class="Cabeza">
+			<img id="SB_logo1" class="Intro3_img" src="./images/SB_full_logo.png" alt="SportzBreak" >
+			<p><a class="Salida" href="./SB2_4.html"><img class="Salida_img" src="./images/btn_home.png"></a></p>
+		</div>
+
+
+		<h2 id="ready3" align="center" class="Center_notes">Brendan Get Ready!!</h2>
+
+		<script type="text/javascript" language="javascript">
+		jQuery(document).ready(function() { 
+			console.dir("greeting again " + localStorage.getItem("username"));
+			$("#ready3").html("<h2 class='Center_notes'>" + localStorage.getItem("username") + " Get Ready!!</h2>");
+		});
+		</script>
+
+		<div class="SB5_box1">
+			<p align="center">
+				<img src="./images/kfc_logo_mobile.png" alt="KFC" class="jqPuzzle" />
+			</p>
+
+
+		</div>
+<!--		<div class="SB5_box2"></div>-->
+
+
+		<!--<p class="Bandera">SB5</p>
+		<p class="Resol_480"> 480 </p><p class="Resol_650"> 650 </p><p class="Resol_800"> 800 </p><p class="Screen1"> Screen </p>-->
+	</body>
+
+
+</html>

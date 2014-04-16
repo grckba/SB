@@ -1,0 +1,90 @@
+<!--  This file was powered by FROJAS -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="./css/SB-style-mobile.css"/>
+        <script type="text/javascript" src="./js/jquery-1.7.2.js"></script> 
+
+        <title>SPORTZBREAK</title>
+    </head>
+    <body background="./images/degraded_line_bg.png">
+        <div class="Espacio">
+            <div class="Cabeza">
+                <img id="SB_logo1" class="Intro3_img" src="./images/SB_full_logo.png" alt="SportzBreak" >		
+                <p><a class="Salida" href="./SB2_4.html"><img class="Salida_img" src="./images/btn_home.png"></a></p>
+            </div>
+
+            <script type="text/javascript" language="javascript">
+                jQuery(document).ready(function() {
+                    console.dir("greeting again " + localStorage.getItem("username"));
+                    $("#greeting2").html("<h2 class='Center_notes'>Welcome " + localStorage.getItem("username") + "!</h2>");
+                });
+            </script>
+
+            <div class="notes">
+                <h2 id="greeting2" align="center" class="Center_notes">Welcome, Brendan!</h2>
+            </div>
+
+            <p id="Title1">Rules:</p>
+            <ol>
+                <li>You can practice as much as you like.</li>
+                <li>You Can play a given game 3 times.</li>
+                <li>Minor need parent permission.</li>
+                <li>Have fun!.</li>
+            </ol>
+
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td><input id="Checkbox1" type="checkbox" />
+                    </td>
+                    <td><p id="Check_text">
+                            <label form="css">I agree to the full terms and conditions.</label>
+                        </p>
+                    </td>
+                </tr> 
+            </table>	
+            
+            <!--
+                <form id="terms_form">
+                    <p align="center"><input type="checkbox" name="css" id="Checkbox2"/>Check this to continue</p>
+                    <p align="center" class="submit"><input id="Button1" type="button" value="Validate" onclick="validate()" /></p> 
+                </form>      
+            -->
+
+            <p id="Check_text">
+                <a href="#">Read full terms and conditions.</a>
+            </p>
+
+            <div class="SB3_box1">
+                <div class="Article3">
+                    <p> You're playing to win up to:
+                        $500 KFC spending money.</P>
+
+                </div>
+                <img Class="Tarro_img" src="./images/kfc_bucket.png">
+            </div>
+
+            <div id='errorDiv' class='error_text' style='display:none'>You must accept terms and conditions to play</div>
+            
+            <div class="SB1_box4">
+                <img id="BT_tipo1" src="./images/btn_practice.png" onclick="validate()">
+                <img id="BT_tipo2" src="./images/btn_play.png" onclick="validate()">
+            </div>
+
+        </div>	
+    </body>
+
+    <script type="text/javascript">
+        function validate() {
+            if ($('#Checkbox1').attr('checked')) {
+                window.location.replace("SB4.html");
+            } else {
+                $('#errorDiv').css('display', 'block');
+                $('.error_text').fadeIn(400).delay(3000).fadeOut(400);
+                //alert("You have to agree terms and conditions in order to play");
+            }
+        }
+    </script>
+    
+</html>
